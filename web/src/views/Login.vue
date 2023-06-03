@@ -11,6 +11,6 @@ import version from '@/common/version'
     >
       <p class="font-bold text-3xl text-center">Login</p>
     </div>
-    <span class="fixed bottom-4 left-5 text-lg">{{ version }}</span>
+    <span class="fixed bottom-5 left-7 text-lg">{{ version }}</span>
   </div>
 </template>
