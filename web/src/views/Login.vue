@@ -9,7 +9,7 @@ import version from '@/common/version'
     <div class="my-panel">
       <p class="font-bold text-4xl text-center mb-4">Login</p>
       <input type="text" class="my-input w-full mb-3" placeholder="用户名" />
-      <input type="text" class="my-input w-full mb-3" placeholder="密码" />
+      <input type="password" class="my-input w-full mb-3" placeholder="密码" />
       <button class="my-button w-full mb-3">登录</button>
       <select class="my-select w-full">
         <option value="127.0.0.1">本地服务器</option>
