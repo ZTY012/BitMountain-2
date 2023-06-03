@@ -1,5 +1,13 @@
 <script setup lang="ts">
 import version from '@/common/version'
+import { ref } from 'vue';
+
+const username = ref<HTMLInputElement>()
+const password = ref<HTMLInputElement>()
+
+function login() {
+  
+}
 </script>
 
 <template>
@@ -8,11 +16,11 @@ import version from '@/common/version'
   >
     <div class="my-panel">
       <p class="font-bold text-4xl text-center mb-4">Login</p>
-      <input type="text" class="my-input w-full mb-3" placeholder="用户名" />
-      <input type="password" class="my-input w-full mb-3" placeholder="密码" />
-      <button class="my-button w-full mb-3">登录</button>
+      <input type="text" class="my-input w-full mb-3" placeholder="用户名" ref="username" />
+      <input type="password" class="my-input w-full mb-3" placeholder="密码" ref="password" />
+      <button class="my-button w-full mb-3" @click="login">登录</button>
       <select class="my-select w-full">
-        <option value="127.0.0.1">本地服务器</option>
+        <option value="ws://127.0.0.1">本地服务器</option>
       </select>
     </div>
     <span class="fixed bottom-5 left-7 text-lg">{{ version }}</span>
