@@ -13,4 +13,6 @@
 }
 .my-select {
   @apply my-button;
+  /* 兼容旧版chromium */
+  text-align-last: center;
 }
