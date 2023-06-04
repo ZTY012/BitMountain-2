@@ -2,9 +2,11 @@
 
 <template>
   <div class="w-screen h-screen overflow-hidden bg-slate-800">
-    <Transition>
-      <RouterView class="relative transition-all top-0"></RouterView>
-    </Transition>
+    <RouterView v-slot="{ Component }">
+      <transition>
+        <component :is="Component" class="relative transition-all top-0" />
+      </transition>
+    </RouterView>
   </div>
 </template>
 

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/node": "^20.2.5",
+    "js-base64": "^3.7.5",
     "vue": "^3.2.47",
     "vue-router": "^4.2.2"
   },
